@@ -18,8 +18,11 @@ if __name__ == '__main__':
   print(data)
   
   #Separar base em variaveis e classe
-  X_risco_credito = data.iloc[:,0:4].values
-  y_risco_credito = data.iloc[:,4].values
+  X_risco_credito = data.iloc[1:,0:4].values
+  y_risco_credito = data.iloc[1:,4].values
+
+  print(y_risco_credito)
+  print(X_risco_credito)
 
   #Aplicar laber enconder
   label_encoder_historia = LabelEncoder()
@@ -61,11 +64,11 @@ if __name__ == '__main__':
 
   #Previsões
   print('\nPrevisão história boa, dívida alta, garantia nenhuma, renda > 35')
-  previsao1 = naiveb_risco_credito.predict([[0, 0, 2, 2]])
+  previsao1 = naiveb_risco_credito.predict([[0, 0, 1, 2]])
   print(previsao1)
 
   print('\nPrevisão história ruim, dívida alta, garantia adequada, renda < 15')
-  previsao2 = naiveb_risco_credito.predict([[3, 0, 0, 0]])
+  previsao2 = naiveb_risco_credito.predict([[2, 0, 0, 0]])
   print(previsao2)
 
   #Printar atibuto .classes
