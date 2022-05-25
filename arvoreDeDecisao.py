@@ -12,7 +12,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from yellowbrick.classifier import ConfusionMatrix
 from sklearn.ensemble import RandomForestClassifier
 
-if __name__ == '__main__':
+if __name__ == '__main__':  
 
   # Importar dados pré processados
   import pickle
