@@ -1,3 +1,7 @@
+#Fábio Franz
+#Matheus Pasold
+#Minéia Maschio
+
 from operator import xor
 
 import pandas as pd

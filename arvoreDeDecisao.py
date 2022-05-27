@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+#Fábio Franz
+#Matheus Pasold
+#Minéia Maschio
 
 import pandas as pd
 import numpy as np
